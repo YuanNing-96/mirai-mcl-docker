@@ -19,6 +19,26 @@ https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1
 
 mcl启动成功后退出mcl(退出请在mcl的控制台键入exit，回车)，使用Dockerfile文件打包
 
+> 注：最终打包前树形输出两层内的目录结构样例：（使用命令：tree -L 2）
 
-
-注：请保证Dockerfile的同级目录下，可以访问到./mcl/mcl并执行
+```
+├── Dockerfile
+├── mcl
+│   ├── config
+│   ├── config.json
+│   ├── data
+│   ├── libs
+│   ├── LICENSE
+│   ├── logs
+│   ├── mcl
+│   ├── mcl-2.1.2.zip
+│   ├── mcl.cmd
+│   ├── mcl.jar
+│   ├── modules
+│   ├── plugin-libraries
+│   ├── plugins
+│   ├── plugin-shared-libraries
+│   └── README.md
+├── mcl-2.1.2.zip
+└── README.md
+```
